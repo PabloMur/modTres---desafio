@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  width: auto;
+  background-color: red;
+}
+.nav {
+  height: 10vh;
+  margin: auto;
+  color: white;
+  background-color: black;
+}
+footer {
+  height: 150px;
+  width: auto;
+  color: black;
+  background-color: #dbdbdb;
+}
