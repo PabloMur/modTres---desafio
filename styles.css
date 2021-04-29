@@ -1,15 +1,59 @@
-body {
-  height: 100vh;
-  width: auto;
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body {
+  height: auto;
+  width: 100vw;
+  background-color: blueviolet;
+}
+
+.grid-container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "banner"
+    "sobreMi"
+    "servicios"
+    "formulario"
+    "footer";
+}
+
 .nav {
+  grid-area: nav;
   height: 10vh;
-  margin: auto;
+  width: 100vw;
   color: white;
   background-color: black;
+  z-index: 2;
 }
+
+.banner {
+  grid-area: banner;
+  color: white;
+  background-color: yellow;
+}
+
+.sobreMi {
+  grid-area: sobreMi;
+  height: 200px;
+  width: 100vw;
+  background-color: red;
+}
+
+.servicios {
+  background-color: green;
+}
+
+.formulario {
+  background-color: indigo;
+}
+
 footer {
+  grid-area: footer;
   height: 150px;
   width: auto;
   color: black;
