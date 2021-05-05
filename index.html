@@ -1,64 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- fuentes de Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
-</head>
-<body>
-   <div class="grid-container">
-    <nav class="nav">
-        <div class="logoP">
-            <img src="./img/logo.png" alt="logo de la empresa - Pablo Murillo">
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="intro">
+        <nav>
+          <div class="logoP">
+            <img src="./img/logo.png" alt="logo de la empresa - Pablo Murillo" />
+          </div>
+          <ul class="navegacion">
+            <li><a href="">quien soy</a></li>
+            <li><a href="">servicios</a></li>
+            <li><a href="">escribime</a></li>
+          </ul>
+          <img
+            class="burger"
+            src="./img/burger.png"
+            alt="imagen de menu desplegable"
+          />
+        </nav>
+        <div class="banner">
+          <h1>Bienvenidxs <br>a mi Site</h1>
+          <img src="./img/yo-mod3.png" alt="el mismisimo yo XD" />
         </div>
-        <div class="iconoMenuDesp">
-            <div class="lineUno"></div>
-            <div class="lineDos"></div>
-            <div class="lineTres"></div>
-        </div>
-    </nav>
-    <div class="banner">
-        <h1>Bienvenixs <br>a mi Site</h1>
-        <img src="./img/poli.png" alt="el mismisimo yo XD">
-    </div>
-    <section class="sobreMi">
+      </div>
+      <section class="sobreMi">
         <article>
-            <h2>Soy Pablo</h2>
-            <p>Algo interesante sobre mi. Sit amet consectetur adipisicing elit. Nam ipsam consectetur consequatur? Tempore vel deleniti reiciendis aspernatur eligendi, possimus aperiam animi ex ad porro atque est accusantium quam vero. Exercitationem magnam in velit odio placeat quis autem nulla, earum aliquid!    
-            </p>
-            <img src="#" alt="icono verde">
+          <h2 class="sobreMi--title">Soy Pablo</h2>
+          <p class="sobreMi--p">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies dolor.
+          </p>
         </article>
-    </section>
-    <div class="servicios">
-        <h2>Mis Servicios</h2>
-        <ul class="servicios--lista">
-            <li class="lista--item">
-                <img src="./img/ordenador-personal.png" alt="">
-                <p>Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
-            </li>
-            <li class="lista--item">
-                <img src="./img/ordenador-personal.png" alt="">
-                <p>Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
-            </li>
-            <li class="lista--item">
-                <img src="./img/ordenador-personal.png" alt="">
-                <p>Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
-            </li>
-        </ul>
-    </div>
-    <div class="formulario"></div>
-    <footer>
-        <div class="logoPersonal"></div>
-        <div class="listaDeLinksARedesDeContacto">
-            <ul class="listaDeLinksARedesDeContacto--list">
-                <li class="listaRedes--item"></li>
-                <li class="listaRedes--item"></li>
-                <li class="listaRedes--item"></li>
-            </ul>
+        <img src="./img/check (1) 1.png" alt="icono verde" />
+      </section>
+      <section class="servicios">
+        <h2 class="servicios--title">
+          Mis Servicios
+        </h2>
+        <div class="servicios--lista">
+          <div class="servicios--item">
+            <img src="./img/desktop 1.png" alt="" />
+            <h3 class="servicios--item-h">Landing Pages</h3>
+            <p class="servicios--item-p">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
+          <div class="servicios--item">
+            <img src="./img/desktop 1.png" alt="" />
+            <h3 class="servicios--item-h">Tiendas Online</h3>
+            <p class="servicios--item-p">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
+          <div class="servicios--item">
+            <img src="./img/desktop 1.png" alt="" />
+            <h3 class="servicios--item-h">Ascesoramiento</h3>
+            <p class="servicios--item-p">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </div>
+      </section>
+      <div class="formulario">
+        <h2 class="form--title">Escribime</h2>
+        <form action="#" method="post">
+ 
+            <label class="form--nombre">NOMBRE</label>
+    
+          <input id="GET-name" type="text" name="name">
+
+          <div class="form--email">
+            <label >EMAIL</label>
+          </div>
+          <input id="GET-email" type="text" name="email">
+
+          <div class="form--mensaje">
+            <label >Mensaje</label>
+          </div>
+          <textarea name="mensaje" id="GET-mensaje"></textarea>
+
+          <input id="boton" type="submit" value="Enviar">
+        </form>
+      </div>
+      <footer>
+        <div class="logoPersonal">
+          <img src="./img/logo.png" alt="#">
+          <span id="huella">© 2021 Pablo Murillo</span>
         </div>
-    </footer>
-   </div>
-</body>
+        <div class="listaDeLinksARedesDeContacto">
+          <ul class="listaDeLinksARedesDeContacto--list">
+            <li class="listaRedes--item"><img src="./img/logotipo-de-instagram.png" alt="#"> instagram</li>
+            <li class="listaRedes--item"><img src="./img/linkedin.png" alt="#"> linkedin</li>
+            <li class="listaRedes--item"><img src="./img/github.png" alt="#"> github</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
