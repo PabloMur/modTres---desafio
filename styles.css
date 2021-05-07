@@ -39,20 +39,19 @@ body {
     "servicios"
     "formulario"
     "footer";
-  overflow: hidden;
 }
 
 .intro {
   grid-area: intro;
   background-image: url("./img/Mask\ Group.png");
   height: 100vh;
-  background-color: var(--blanco);
+  background-color: white;
+  padding: 3.25vh 3.25vh 0 3.25vh;
 }
 
 .intro nav {
   width: 100%;
-  height: 13vh;
-  padding: 0 20px;
+  height: 14vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,13 +59,13 @@ body {
 
 .logoP img {
   height: 80px;
-  width: 80px;
+  width: auto;
+  margin-top: 10px;
 }
 
-.nav .burger {
+nav .burger {
   height: 36px;
   width: 36px;
-  left: -50px;
 }
 
 .navegacion {
@@ -75,34 +74,34 @@ body {
 
 .banner {
   text-align: center;
-  height: 87vh;
+  height: 86vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .banner h1 {
-  width: 75%;
+  width: auto;
   height: auto;
-  font-size: 46px;
+  font-size: var(--size-titulos);
   font-weight: 700;
   font-family: var(--titulos), sans-serif;
   text-align: center;
-  line-height: 45px;
-  margin: 120px auto 0 auto;
+  line-height: 48px;
+  margin: auto;
 }
 
 .banner img {
-  height: auto;
-  width: 90%;
-  margin-bottom: -5px;
+  height: 48vh;
+  width: auto;
+  margin: 0 auto;
 }
 
 .sobreMi {
   grid-area: sobreMi;
-  height: 80vh;
+  height: 87vh;
   width: 100%;
-  padding: 50px;
+  padding: 8.92vh 8.53% 11.03vh 8.53%;
   font-size: 1.2em;
   color: white;
   background-color: black;
@@ -124,31 +123,52 @@ body {
   font-size: var(--size-contenido);
   font-weight: 400;
   margin: 9vh auto;
-  text-align: center;
+  text-align: left;
+}
+
+.sobreMi img {
+  width: 13vh;
+  height: 13vh;
+  margin: 0 auto;
 }
 
 .servicios {
   grid-area: servicios;
-  height: auto;
+  height: 1375px;
   width: 100%;
   background-color: var(--casi-blanco);
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 9vh 20vw;
+  padding: 11.32vh 13.86% 10.71vh 13.86%;
   background-color: var(--blanco);
-}
-
-.servicios--item {
-  margin-top: 8vh;
 }
 
 .servicios--title {
   color: var(--casi-negro);
   font-family: var(--titulos);
   font-size: var(--size-sub-titulos);
+  height: 9vh;
+  width: 100%;
+}
+
+.servicios--lista {
+  width: 100%;
+  height: 185vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 7.79vh;
+}
+
+.servicios--item {
+  height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .servicios--item-h {
@@ -159,21 +179,20 @@ body {
 
 .servicios--item-p {
   color: var(--casi-negro);
-  margin-top: 2vh;
   font-family: var(--contenido);
   font-size: var(--size-contenido);
   font-weight: 400;
-  line-height: 18px;
+  padding: 0 13px;
 }
 
-.lista--item img {
-  height: 90px;
-  width: auto;
+.servicios--item img {
+  height: auto;
+  width: 36.8vw;
 }
 
 .formulario {
   grid-area: formulario;
-  height: 100vh;
+  height: 107vh;
   width: 100%;
   background-color: #000;
   text-align: center;
@@ -192,16 +211,16 @@ body {
 
 .formulario input,
 .formulario textarea {
-  width: 100%;
+  width: 90vw;
   height: 50px;
   border: solid 3px var(--casi-negro);
+  border-radius: 4px;
 }
 
 .formulario textarea {
   min-height: 120px;
   max-height: 240px;
-  min-width: 375px;
-  max-width: 90vw;
+  width: 90vw;
 }
 
 #boton {
@@ -229,34 +248,71 @@ body {
 
 footer {
   grid-area: footer;
-  height: 40vh;
+  height: 80vh;
   width: 100%;
   color: black;
-  background-color: var(--negro);
+  background-color: var(--casi-negro);
+  padding: 8.6vh 20px 18.34vh 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.lista--item {
-  vertical-align: middle;
+.logoPersonal {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+
+.logoPersonal img {
+  height: auto;
+  width: 14vw;
+}
+
+#huella {
+  font-family: var(--contenido);
+  font-size: 13px;
+  margin-top: 20px;
+  background-color: var(--casi-negro);
+}
+
+.listaDeLinksARedesDeContacto {
+  background-color: chartreuse;
+}
+
+.listaDeLinksARedesDeContacto--list {
+  list-style: none;
+}
+
+.listaRedes--item {
+  font-size: var(--contenido);
+  font-family: var(--contenido);
 }
 
 .listaRedes--item img {
-  height: 60px;
-  width: auto;
+  height: auto;
+  width: 4.5vw;
 }
 
 @media screen and (min-width: 800px) {
   .intro {
-    height: 616px;
-    padding: 20px 80px 0 80px;
+    height: 68.4vh;
+    padding: 0 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
+  .nav {
+    background-color: coral;
+    justify-content: center;
+  }
+
   .logoP img {
     height: 110px;
     width: auto;
-    margin-left: -47px;
   }
 
   .burger {
@@ -264,17 +320,17 @@ footer {
   }
 
   .navegacion {
-    min-width: 438px;
+    min-width: 30.8vw;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-right: -15px;
+    background-color: aquamarine;
   }
 
   .navegacion a {
     color: var(--negro);
     font-family: var(--titulos);
-    font-size: var(--size-sub-sub-titulos);
+    font-size: 1.2em;
     text-decoration: none;
   }
 
@@ -283,24 +339,30 @@ footer {
   }
 
   .banner {
-    height: 47vh;
+    height: auto;
     flex-direction: row;
-    justify-content: center;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #4bd1b1;
+    padding: 0;
   }
 
   .banner h1 {
     text-align: left;
+    background-color: #ffd953;
+    margin: 0;
   }
 
   .banner img {
+    margin: 0;
     height: auto;
-    width: 30vw;
+    width: 20vw;
+    background-color: #ffd953;
+    margin-right: 5vw;
   }
 
   .sobreMi {
-    height: 538px;
+    height: 59vh;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -324,7 +386,7 @@ footer {
   }
 
   .servicios {
-    height: 604px;
+    height: 67vh;
     padding: 59px 80px 108px 80px;
     justify-content: space-between;
   }
@@ -337,6 +399,7 @@ footer {
   .servicios--lista {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -356,7 +419,7 @@ footer {
 
   .formulario {
     background: var(--negro);
-    height: 660px;
+    height: 107.14vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -381,17 +444,18 @@ footer {
     min-height: 45px;
     border-radius: 4px;
     margin-bottom: 11px;
+    width: 375px;
   }
 
   #GET-email {
     margin-top: 0;
     margin-bottom: 0px;
     border-radius: 4px;
+    width: 375px;
   }
 
   form textarea {
     max-width: 375px;
-    max-height: 107px;
     border-radius: 4px;
     margin-bottom: 60px;
   }
