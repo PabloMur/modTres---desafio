@@ -212,14 +212,14 @@ nav .burger {
 .formulario input,
 .formulario textarea {
   width: 90vw;
-  height: 50px;
+  height: 45px;
   border: solid 3px var(--casi-negro);
   border-radius: 4px;
 }
 
 .formulario textarea {
   min-height: 120px;
-  max-height: 240px;
+  max-height: 120px;
   width: 90vw;
 }
 
@@ -250,9 +250,10 @@ footer {
   grid-area: footer;
   height: 80vh;
   width: 100%;
-  color: black;
-  background-color: var(--casi-negro);
-  padding: 8.6vh 20px 18.34vh 20px;
+  background-color: var(--gris-clarito);
+  padding-left: 6vw;
+  padding-bottom: 18vh;
+  padding-top: 8.6vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -260,7 +261,6 @@ footer {
 }
 
 .logoPersonal {
-  background-color: green;
   display: flex;
   flex-direction: column;
   width: 35vw;
@@ -268,32 +268,44 @@ footer {
 
 .logoPersonal img {
   height: auto;
-  width: 14vw;
+  width: 17vw;
 }
 
 #huella {
   font-family: var(--contenido);
   font-size: 13px;
   margin-top: 20px;
-  background-color: var(--casi-negro);
+  color: #2c2c2c;
 }
 
 .listaDeLinksARedesDeContacto {
-  background-color: chartreuse;
+  height: 22vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .listaDeLinksARedesDeContacto--list {
   list-style: none;
+  height: 100%;
+  width: 28vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .listaRedes--item {
   font-size: var(--contenido);
   font-family: var(--contenido);
+  display: flex;
+  align-items: center;
 }
 
 .listaRedes--item img {
   height: auto;
-  width: 4.5vw;
+  width: 28px;
+  margin-right: 2vw;
 }
 
 @media screen and (min-width: 800px) {
@@ -306,12 +318,11 @@ footer {
   }
 
   .nav {
-    background-color: coral;
     justify-content: center;
   }
 
   .logoP img {
-    height: 110px;
+    height: 11vh;
     width: auto;
   }
 
@@ -324,7 +335,6 @@ footer {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    background-color: aquamarine;
   }
 
   .navegacion a {
@@ -343,21 +353,19 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #4bd1b1;
     padding: 0;
   }
 
   .banner h1 {
+    margin-top: 5vh;
+    margin-left: 0;
     text-align: left;
-    background-color: #ffd953;
-    margin: 0;
   }
 
   .banner img {
     margin: 0;
     height: auto;
     width: 20vw;
-    background-color: #ffd953;
     margin-right: 5vw;
   }
 
@@ -365,34 +373,43 @@ footer {
     height: 59vh;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20vw;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .sobreMi--title {
     text-align: left;
     font-size: var(--size-sub-titulos);
+    margin-bottom: 28px;
   }
 
   .sobreMi--p {
-    max-width: 36.8vw;
-    text-align: left;
+    height: auto;
+    width: 37vw;
+    font-size: 3vh;
+    margin: 0;
   }
 
   .sobreMi img {
-    height: 200px;
+    height: 23vh;
     width: auto;
-    margin-right: 6vw;
+    margin: 0;
   }
 
   .servicios {
-    height: 67vh;
-    padding: 59px 80px 108px 80px;
+    height: 70vh;
     justify-content: space-between;
+    padding: 5vh 8vw 0 8vw;
   }
 
   .servicios--title {
-    margin-top: 20px;
     font-size: var(--size-titulos);
   }
 
@@ -404,60 +421,65 @@ footer {
   }
 
   .servicios--item {
-    width: auto;
-    max-height: 312px;
+    width: 34vh;
+    height: 34vh;
+  }
+
+  .servicios--item-h {
+    font-size: 24px;
+    margin-top: 2vh;
   }
 
   .servicios--item-p {
-    max-width: 200px;
+    font-size: 15px;
+    margin-top: 2vh;
   }
 
   .servicios--item img {
-    height: 21.3vh;
+    height: 17vh;
     width: auto;
   }
 
   .formulario {
     background: var(--negro);
-    height: 107.14vh;
+    height: 73vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding-top: 116px;
-    padding-bottom: 116px;
+    align-items: flex-start;
   }
 
   .formulario h2 {
-    font-size: var(--size-titulos);
-    align-self: flex-start;
+    font-size: var(--size-sub-titulos);
   }
 
   .formulario form {
     margin-left: 5vw;
+    margin-top: -10px;
     max-width: 375px;
-    max-height: 428px;
-    margin-bottom: 25px;
+    min-height: 24vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   #GET-name {
-    min-height: 45px;
+    height: 5vh;
     border-radius: 4px;
-    margin-bottom: 11px;
     width: 375px;
   }
 
   #GET-email {
-    margin-top: 0;
-    margin-bottom: 0px;
+    height: 5vh;
     border-radius: 4px;
     width: 375px;
   }
 
-  form textarea {
+  textarea {
     max-width: 375px;
+    min-height: 17%;
     border-radius: 4px;
-    margin-bottom: 60px;
   }
 
   .form--nombre,
@@ -466,24 +488,25 @@ footer {
     font-family: var(--contenido);
     font-size: 13px;
     max-height: 20px;
+    margin-bottom: 5px;
+    align-self: flex-start;
   }
 
   .formulario #boton {
-    height: 45px;
+    height: 5vh;
     width: 375px;
-    margin-top: 0;
+    margin-top: 5vh;
   }
 
   footer {
-    height: 346px;
+    height: 38vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-position: inherit;
-    background-repeat: no-repeat;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: var(--casi-blanco);
+    background-color: rgb(203, 200, 200);
+    padding: 0;
+    background-image: url(./img/MaskGroupsdf.png);
   }
 
   .logoPersonal {
@@ -491,6 +514,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
+    margin-left: 8vw;
   }
 
   .logoPersonal img {
@@ -507,13 +532,11 @@ footer {
   .listaDeLinksARedesDeContacto {
     height: 100%;
     width: auto;
-    display: flex;
-    align-items: center;
-    margin-right: 135px;
+    justify-content: center;
   }
 
   .listaDeLinksARedesDeContacto--list {
-    height: 156px;
+    height: 60%;
     list-style: none;
     display: flex;
     flex-direction: column;
