@@ -26,7 +26,7 @@
 
 body {
   height: auto;
-  width: 100%;
+  width: 100vw;
 }
 
 .grid-container {
@@ -44,9 +44,9 @@ body {
 .intro {
   grid-area: intro;
   background-image: url("./img/Mask\ Group.png");
-  height: 90%;
-  background-color: white;
-  padding: 3.25vh 3.25vh 0 3.25vh;
+  height: 100%;
+  width: 100%;
+  background-color: greenyellow;
 }
 
 .intro nav {
@@ -55,6 +55,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: indianred;
 }
 
 .logoP img {
@@ -75,6 +76,7 @@ nav .burger {
 .banner {
   text-align: center;
   height: 86vh;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -83,7 +85,7 @@ nav .burger {
 .banner h1 {
   width: auto;
   height: auto;
-  font-size: var(--size-titulos);
+  font-size: 20px;
   font-weight: 700;
   font-family: var(--titulos), sans-serif;
   text-align: center;
@@ -92,8 +94,8 @@ nav .burger {
 }
 
 .banner img {
-  height: 48vh;
-  width: auto;
+  height: auto;
+  width: 40vw;
   margin: 0 auto;
 }
 
@@ -198,7 +200,7 @@ nav .burger {
   text-align: center;
   padding: 9vh 5vw;
   color: var(--casi-blanco);
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
 }
