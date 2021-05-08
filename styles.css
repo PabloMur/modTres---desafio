@@ -91,12 +91,14 @@ nav .burger {
   text-align: center;
   line-height: 48px;
   margin: auto;
+  background-color: #ffd953;
 }
 
 .banner img {
-  height: auto;
-  width: 65vw;
+  height: 60%;
+  width: auto;
   margin: 0 auto;
+  background-color: #4bd1b1;
 }
 
 .sobreMi {
