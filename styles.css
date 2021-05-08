@@ -44,7 +44,7 @@ body {
 .intro {
   grid-area: intro;
   background-image: url("./img/Mask\ Group.png");
-  height: 100vh;
+  height: 90%;
   width: 100%;
 }
 
