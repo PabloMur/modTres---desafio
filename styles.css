@@ -45,7 +45,7 @@ body {
   grid-area: intro;
   background-image: url("./img/Mask\ Group.png");
   height: 90%;
-  background-color: hotpink;
+  background-color: white;
   padding: 3.25vh 3.25vh 0 3.25vh;
 }
 
@@ -134,7 +134,7 @@ nav .burger {
 
 .servicios {
   grid-area: servicios;
-  height: 1375px;
+  height: auto;
   width: 100%;
   background-color: var(--casi-blanco);
   text-align: center;
@@ -192,7 +192,7 @@ nav .burger {
 
 .formulario {
   grid-area: formulario;
-  height: 107vh;
+  height: auto;
   width: 100%;
   background-color: #000;
   text-align: center;
@@ -211,7 +211,7 @@ nav .burger {
 
 .formulario input,
 .formulario textarea {
-  width: 90vw;
+  width: 90%;
   height: 45px;
   border: solid 3px var(--casi-negro);
   border-radius: 4px;
@@ -220,7 +220,7 @@ nav .burger {
 .formulario textarea {
   min-height: 120px;
   max-height: 120px;
-  width: 90vw;
+  width: auto;
 }
 
 #boton {
@@ -231,6 +231,7 @@ nav .burger {
   font-family: var(--titulos);
   font-size: var(--size-contenido);
   font-weight: 700;
+  display: none;
 }
 
 .form--nombre,
@@ -281,7 +282,7 @@ footer {
 .listaDeLinksARedesDeContacto {
   height: 22vh;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
 }
