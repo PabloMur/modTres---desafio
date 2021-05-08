@@ -324,8 +324,8 @@ footer {
     justify-content: space-between;
   }
 
-  .nav {
-    justify-content: center;
+  .intro nav {
+    padding: 0;
   }
 
   .logoP img {
@@ -411,7 +411,7 @@ footer {
   }
 
   .servicios {
-    height: 70vh;
+    height: auto;
     justify-content: space-between;
     padding: 5vh 8vw 0 8vw;
   }
@@ -425,6 +425,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 7vh;
   }
 
   .servicios--item {
