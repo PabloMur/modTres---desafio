@@ -322,7 +322,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(rgb(255, 174, 23), rgb(143, 255, 216));
+    background-image: linear-gradient(rgb(252, 77, 138), rgb(143, 255, 216));
   }
 
   .intro nav {
@@ -371,6 +371,10 @@ footer {
     margin-top: 5vh;
     margin-left: 0;
     text-align: left;
+  }
+
+  .banner h1:hover {
+    color: white;
   }
 
   .banner img {
@@ -520,7 +524,12 @@ footer {
     /* background-color: rgb(203, 200, 200); */
     padding: 0;
     /* background-image: url(./img/MaskGroupsdf.png); */
-    background-color: rgb(255, 174, 23);
+
+    background-image: linear-gradient(
+      rgb(255, 174, 23),
+      rgb(255, 114, 151),
+      rgb(255, 114, 151)
+    );
   }
 
   .logoPersonal {
